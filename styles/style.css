@@ -1,0 +1,130 @@
+:root {
+    --light-blue-100: #609ED4;
+    --light-blue-200: #356EA9;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+    --light-gray-200: #ADB5BD;
+    --medium-gray-500: #868E96;
+    --negro: #000000;
+
+    --white-blue: #d3d8e4;
+
+    --font-letter: 'Silkscreen', cursive;
+}
+
+html {
+    /* se reinicia el tamaño de la letra a 62.5% */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 1rem = 10px */
+    font-size: 16px;
+}
+
+.logo {
+    width: 120rem;
+    height: 10rem;
+    padding-top: 3rem;
+}
+
+/* main */
+.container {
+    height: 65rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+@media(min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-one {
+        width: 80rem;
+    }
+
+    .mensaje-original {
+        width: 70rem;
+        height: 50rem;
+        margin: 3rem auto 0;
+        resize: none;
+        font-size: 2.5rem;
+        border: none;
+    }
+
+    .botones-principal {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .section-two {
+        width: 38rem;
+        background-color: var(--white-blue);
+        border-radius: 2rem;
+    }
+}
+
+/* Botones */
+
+.btn {
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1.6rem;
+    width: 25rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.btn-encriptar {
+    background-color: var(--light-blue-200);
+    color: var(--negro);
+    transition: 0.8s;
+}
+
+.btn-encriptar:hover {
+    background-color: var(--dark-blue-500);
+    color: var(--white-blue);
+}
+
+.btn-desencriptar {
+    background-color: var(--white-blue);
+    color: var(--negro);
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--medium-gray-500);
+    color: var(--dark-blue-500);
+}
+
+/* Mensaje encriptado */
+@media(min-width: 768px){
+    .mensaje-encriptado {
+        width: 36rem;
+        height: 51rem;
+        margin: 3rem auto 0;
+    }
+}
+
+.footer{
+    text-align: center;
+    padding-top: 1rem;
+}
