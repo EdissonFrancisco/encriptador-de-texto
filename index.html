@@ -20,7 +20,10 @@
     <header class="logo">
        <img src="imagenes/Logo.png" alt="logo de encriptador">
     </header>
+
+    <!-- container del encriptador -->
     <main class="container">
+        <!-- seccion textarea encriptar -->
         <section class="section-one">
             <textarea id="mensaje" class="mensaje-original" name="encriptar" placeholder="Ingrese el texto aqui"></textarea>
             <p>
@@ -32,17 +35,18 @@
                 <button id="desencripta" class="btn btn-desencriptar">Desencriptar</button>
             </div>
         </section>
+
+        <!-- seccion textarea resultado -->
         <section class="section-two">
             <textarea class="mensaje-encriptado" readonly="readonly"></textarea>
             <div class="boton-copiar">
-                <button id="btnCopia" class="btn btn-copiar" onclick="btnDesEncriptar()">Copiar</button>
+                <button id="btnCopia" class="btn btn-copiar" onclick="copiarTexto()">Copiar</button>
             </div>
         </section>
     </main>
     <footer class="footer">
         <p>Realizado por - Edisson Acero</p>
     </footer>
-
     <script src="javaScript.js"></script>
 </body>
 
