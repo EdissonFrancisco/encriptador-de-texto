@@ -20,12 +20,12 @@ btnDesencripta.addEventListener("click", (e) => {
 });
 
 // funciona para copiar el texto
-const copiarTexto = () => {
-    encriptado.select()
-    document.execCommand('copy')
-    console.log('texto copiado');
-}
-
+const btnCopiar = document.getElementById("btnCopia");
+btnCopiar.addEventListener("click", (e) => {
+  e.preventDefault();
+  encriptado.select();
+  document.execCommand('copy');
+})
 
 //matriz de encriptado
 const matriz = [

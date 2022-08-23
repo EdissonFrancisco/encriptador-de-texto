@@ -11,14 +11,9 @@
     --white-blue: #d3d8e4;
 
     --font-letter: 'Silkscreen', cursive;
-
-    /*
-    $telefono: 480px;
-    $tablet: 768px;
-    $desktop: 992px;
-    $desktopXL: 1200px;
-    */
 }
+
+/* Globales */
 
 html {
     /* se reinicia el tamaño de la letra a 62.5% */
@@ -40,6 +35,7 @@ body {
     font-size: 16px;
 }
 
+/* header */
 .logo {
     width: 120rem;
     height: 10rem;
@@ -48,7 +44,7 @@ body {
 
 /* main */
 .container {
-    height: 80rem;
+    height: 80%;
     text-align: center;
     gap: 1rem;
 }
@@ -59,18 +55,20 @@ body {
         display: flex;
         justify-content: center;
     }
+}
 
+@media(min-width: 992px) {
     .section-one {
-        width: 80rem;
+        width: 65%;
     }
-
     .section-two {
-        width: 38rem;
+        width: 29%;
         background-color: var(--white-blue);
         border-radius: 2rem;
     }
 }
 
+/* primera seccion main */
 .mensaje-original {
     max-width: 80%;
     height: 35rem;
@@ -83,13 +81,35 @@ body {
 
 @media(min-width: 992px) {
     .mensaje-original {
-        width: 70rem;
+        width: 70%;
         height: 50rem;
+    }
+}
+
+/*  segunda seccion
+    Mensaje encriptado */
+.mensaje-encriptado {
+    max-width: 80%;
+    height: 100%;
+    margin: 3rem auto 0;
+    resize: none;
+    font-size: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+@media(min-width: 992px) {
+    .mensaje-encriptado {
+        height: 51rem;
+        margin: 3rem auto 0;
+        resize: none;
+        background-color: var(--white-blue);
     }
 }
 
 /* Botones */
 
+/* Diseño principal de boton */
 .btn {
     text-align: center;
     padding: 1rem 3rem;
@@ -104,6 +124,7 @@ body {
     margin-top: 2rem;
 }
 
+/* Div botones */
 @media(min-width: 992px) {
     .botones-principal {
         display: flex;
@@ -112,6 +133,7 @@ body {
     }
 }
 
+/* boton enciptar */
 .btn-encriptar {
     background-color: var(--light-blue-200);
     color: var(--negro);
@@ -124,6 +146,7 @@ body {
     color: var(--white-blue);
 }
 
+/* boton desenciptar */
 .btn-desencriptar {
     background-color: var(--white-blue);
     color: var(--negro);
@@ -145,25 +168,6 @@ body {
 .btn-copiar:hover {
     background-color: var(--light-blue-100);
     color: var(--white-blue);
-}
-
-/* Mensaje encriptado */
-.mensaje-encriptado {
-    max-width: 80%;
-    height: 100%;
-    margin: 3rem auto 0;
-    resize: none;
-    font-size: 2.5rem;
-    border: none;
-}
-
-@media(min-width: 992px) {
-    .mensaje-encriptado {
-        height: 51rem;
-        margin: 3rem auto 0;
-        resize: none;
-        background-color: var(--white-blue);
-    }
 }
 
 .footer {
